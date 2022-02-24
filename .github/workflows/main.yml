@@ -18,15 +18,12 @@ jobs:
 
     runs-on: windows-latest
 
-     steps: 
+    steps: 
      
      - uses: actions/checkout@main
-
-    - name: Deploy to Azure Web App
-
-      uses: azure/webapps-deploy@v1
-
-      with:
+     - name: Deploy to Azure Web App
+     - uses: azure/webapps-deploy@v1
+     - with:
 
         app-name: 'CMST385-bhall82'
 
