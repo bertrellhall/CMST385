@@ -18,9 +18,9 @@ jobs:
 
     runs-on: windows-latest
 
-     steps:
-
-    - uses: actions/checkout@main
+     steps: 
+     
+     - uses: actions/checkout@main
 
     - name: Deploy to Azure Web App
 
@@ -31,8 +31,6 @@ jobs:
         app-name: 'CMST385-bhall82'
 
         slot-name: 'production'
-
-      #Change the publish profile to match what you named your secret setup in GitHub, Example shown below
 
         publish-profile: ${{ secrets.AppServiceCMST385 }}
 
