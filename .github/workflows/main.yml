@@ -1,4 +1,4 @@
-name: Deploy HTML Files to AppService - CMST385
+name: Deploy HTML Files to AppServices - CMST385
 on:
  push:
    branches:
@@ -13,5 +13,5 @@ jobs:
       with:
         app-name: 'CMST385-bhall82'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AppServiceCMST385 }}
+        publish-profile: ${{ secrets.AppServicesCMST385 }}
 
